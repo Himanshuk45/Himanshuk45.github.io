@@ -31,12 +31,12 @@
 
     <script>
       // Embed Visualization 1
-      fetch('chart1.json')
+      fetch('plot1.json')
         .then(response => response.json())
         .then(spec => vegaEmbed('#vis1', spec, { "actions": false }));
 
       // Embed Visualization 2
-      fetch('chart2.json')
+      fetch('plot2.json')
         .then(response => response.json())
         .then(spec => vegaEmbed('#vis2', spec, { "actions": false }));
     </script>
