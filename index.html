@@ -19,14 +19,16 @@
     
     <h2>Plot 1: BigFoot Sightings by State</h2>
     <div id="viz1"></div>
-    <p>This bar chart provides a quantitative overview of the buildings managed by each state agency. By visualizing the 'Building Count' on the x-axis and the 'Agency Name' on the y-axis, it is immediately apparent which agencies are responsible for the most buildings. This view is particularly useful for state resource planning and public information.</p>
-    <p>In designing this visualization, I opted for a horizontal bar chart to better display the agency names without clutter. The chart is sorted in descending order, so the agency with the most buildings is at the top, which makes it easier to read and understand at a glance. No specific color scheme was used, as the focus is on the count rather than categorization by agency.</p>
+    <p>I have generated a bar chart visualization representing the frequency of Bigfoot sightings across various states. The chart employs a bar mark for visual representation, with states sorted based on sighting counts. The y-axis encodes the count of sightings, while the bars are colored orange.</p>
+    <p>The data contains Bigfoot sighting information, grouped by state and counting sightings. These design choices aim to convey the distribution of sightings effectively, prioritizing clarity and visual appeal.</p>
 
     <h2>Plot 2: BigFoot Sightings - Frequency by Season and State</h2>
     <div id="viz2"></div>
-    <p>This interactive visualization uses a scatter plot to represent the distribution of buildings across Congressional and Senate Districts, with the additional capability to filter by the 'Year Acquired'. The x-axis shows the Congressional Districts and the y-axis the Senate Districts, while the color encodes the 'Agency Name'.</p>
-    <p>A slider allows the viewer to filter the data by the year in which buildings were acquired, adding an interactive element that enables users to explore trends over time. The choice to color-code by agency helps to highlight which agencies have holdings in particular districts. The tooltip provides additional details on hover, giving further context to each data point.</p>
+    <p>I have generated an interactive scatter plot visualization exploring the frequency of Bigfoot sightings by state and season. The plot employs encodings for states on the x-axis, seasons on the y-axis, and frequency of sightings represented by point size, while color distinguishes between seasons. Data was aggregated by state and season using the count function. Interactivity is introduced through a dropdown menu allowing users to filter data by state, enhancing clarity and enabling focused exploration of the dataset.</p>
 
+    <a href="bfro_reports_fall2022.csv" class="button" target="_blank">The Data</a>
+    <a href="Workbook.ipynb" class="button" target="_blank">The Analysis</a>
+    
     <script>
       fetch('plot1.json')
         .then(response => response.json())
