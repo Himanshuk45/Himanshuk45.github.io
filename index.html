@@ -26,11 +26,11 @@
     <script>
       fetch('plot1.json')
         .then(response => response.json())
-        .then(spec => vegaEmbed('#plot1', spec));
+        .then(spec => vegaEmbed('#plot1', spec, { "actions": false }));
 
       fetch('plot2.json')
         .then(response => response.json())
-        .then(spec => vegaEmbed('#plot2', spec));
+        .then(spec => vegaEmbed('#plot2', spec, { "actions": false }));
     </script>
 </body>
 </html>
