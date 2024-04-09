@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Inventory Visualizations</title>
+    <title>Bigfoot Sightings Visualizations</title>
     <style>
-        #vis1, #vis2, #vis3 {
-            width: 100%;
-            height: 500px; 
+        #plot1, #plot2 {
+            width: 100%; 
+            height: 500px;
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -15,22 +15,22 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
-    <h1>BigFoot Sightings</h1>
+    <h1>Bigfoot Sightings</h1>
     
-    <h2>Plot 1: BigFoot Sightings by State</h2>
-    <div id="plot1"></div>
+    <h2>Plot 1: Bigfoot Sightings by State</h2>
+    <div id="viz1"></div>
 
-    <h2>Bigfoot Sightings: Frequency by State and Season</h2>
-    <div id="plot2"></div>
+    <h2>Plot 2: Bigfoot Sightings by State and Season</h2>
+    <div id="viz2"></div>
 
     <script>
       fetch('plot1.json')
         .then(response => response.json())
-        .then(spec => vegaEmbed('#plot1', spec, { "actions": false }));
+        .then(spec => vegaEmbed('#viz1', spec, { "actions": false }));
 
       fetch('plot2.json')
         .then(response => response.json())
-        .then(spec => vegaEmbed('#plot2', spec, { "actions": false }));
+        .then(spec => vegaEmbed('#viz2', spec, { "actions": false }));
     </script>
 </body>
 </html>
