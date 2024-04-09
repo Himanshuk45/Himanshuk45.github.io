@@ -3,34 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Inventory Visualizations</title>
+    <title>BigFoot Sightings</title>
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
-    <h1>Building Inventory Visualizations</h1>
-    <p>This page showcases visualizations of the state building inventory.</p>
+    <h1>BigFoot Sightings</h1>
     
-    <h2>Visualization 1: Number of Buildings by Agency</h2>
-    <div id="vis1"></div>
+    <h2>Plot 1: BigFoot Sightings by State</h2>
+    <div id="plot1"></div>
 
-    <h2>Visualization 2: Buildings by Congressional and Senate Districts</h2>
+    <h2>Bigfoot Sightings: Frequency by State and Season</h2>
     <div id="vis2"></div>
 
-    <h2>Visualization 3: Square Footage of Buildings Over Years by Status</h2>
-    <div id="vis3"></div>
-
     <script>
-      // Embed Visualization 1
       fetch('plot1.json')
         .then(response => response.json())
-        .then(spec => vegaEmbed('#vis1', spec));
+        .then(spec => vegaEmbed('#plot1', spec));
 
-      // Embed Visualization 2
       fetch('plot2.json')
         .then(response => response.json())
-        .then(spec => vegaEmbed('#vis2', spec));
+        .then(spec => vegaEmbed('#plot2', spec));
     </script>
 </body>
 </html>
