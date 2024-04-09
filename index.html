@@ -26,15 +26,14 @@
     <div id="viz2"></div>
     <p>I have generated an interactive scatter plot visualization exploring the frequency of Bigfoot sightings by state and season. The plot employs encodings for states on the x-axis, seasons on the y-axis, and frequency of sightings represented by point size, while color distinguishes between seasons. Data was aggregated by state and season using the count function. Interactivity is introduced through a dropdown menu allowing users to filter data by state, enhancing clarity and enabling focused exploration of the dataset.</p>
 
-    <a href="bfro_reports_fall2022.csv" class="button" target="_blank">The Data</a>
-    <a href="Workbook.ipynb" class="button" target="_blank">The Analysis</a>
+    <a href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv" class="button" target="_blank">The Data</a>
+    <a href="https://github.com/Himanshuk45/Himanshuk45.github.io/tree/main/Workbook.ipynb" class="button" target="_blank">The Analysis</a>
     
     <script>
       fetch('plot1.json')
         .then(response => response.json())
         .then(spec => vegaEmbed('#viz1', spec, { "actions": false }));
 
-      // Embed Visualization 2
       fetch('plot2.json')
         .then(response => response.json())
         .then(spec => vegaEmbed('#viz2', spec, { "actions": false }));
