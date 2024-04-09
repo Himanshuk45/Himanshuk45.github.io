@@ -19,15 +19,36 @@
     
     <h2>Plot 1: BigFoot Sightings by State</h2>
     <div id="viz1"></div>
-    <p>I have generated a bar chart visualization representing the frequency of Bigfoot sightings across various states. The chart employs a bar mark for visual representation, with states sorted based on sighting counts. The y-axis encodes the count of sightings, while the bars are colored orange.</p>
-    <p>The data contains Bigfoot sighting information, grouped by state and counting sightings. These design choices aim to convey the distribution of sightings effectively, prioritizing clarity and visual appeal.</p>
+    <p>I have generated a bar chart visualization representing the frequency of Bigfoot sightings across various states. The chart employs a bar mark for visual representation, with states sorted based on sighting counts. The y-axis encodes the count of sightings, while the bars are colored orange. The data contains Bigfoot sighting information, grouped by state and counting sightings. These design choices aim to convey the distribution of sightings effectively, prioritizing clarity and visual appeal.</p>
 
     <h2>Plot 2: BigFoot Sightings - Frequency by Season and State</h2>
     <div id="viz2"></div>
     <p>I have generated an interactive scatter plot visualization exploring the frequency of Bigfoot sightings by state and season. The plot employs encodings for states on the x-axis, seasons on the y-axis, and frequency of sightings represented by point size, while color distinguishes between seasons. Data was aggregated by state and season using the count function. Interactivity is introduced through a dropdown menu allowing users to filter data by state, enhancing clarity and enabling focused exploration of the dataset.</p>
 
-    <a href="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv" class="button" target="_blank">The Data</a>
-    <a href="https://github.com/Himanshuk45/Himanshuk45.github.io/tree/main/Workbook.ipynb" class="button" target="_blank">The Analysis</a>
+    <button style="background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;"
+    onclick="window.open('https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv', '_blank')">The Data</button>
+    
+    <button style="background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;"
+    onclick="window.open('https://github.com/Himanshuk45/Himanshuk45.github.io/tree/main/Workbook.ipynb', '_blank')">The Analysis</button>
+
     
     <script>
       fetch('plot1.json')
